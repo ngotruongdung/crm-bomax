@@ -1,0 +1,9 @@
+{
+  "platforms": ["android", "apple"],
+  "apple": {
+    "modules": ["OpsDeskOfficeWifiModule"]
+  },
+  "android": {
+    "modules": ["expo.modules.opsdeskofficewifi.OpsDeskOfficeWifiModule"]
+  }
+}

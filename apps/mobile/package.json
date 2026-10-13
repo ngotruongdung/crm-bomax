@@ -1,0 +1,38 @@
+{
+  "name": "@opsdesk/mobile",
+  "private": true,
+  "version": "0.1.0",
+  "main": "expo-router/entry",
+  "scripts": {
+    "start": "expo start",
+    "export:all": "node ../../scripts/export-mobile.mjs all",
+    "export:web": "node ../../scripts/export-mobile.mjs web",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "check": "node ../../scripts/check-mobile.mjs"
+  },
+  "dependencies": {
+    "@opsdesk/api-client": "workspace:*",
+    "@opsdesk/contracts": "workspace:*",
+    "@opsdesk/design-tokens": "workspace:*",
+    "@supabase/supabase-js": "2.57.4",
+    "expo": "53.0.20",
+    "expo-camera": "~16.1.11",
+    "expo-file-system": "~18.1.11",
+    "expo-modules-core": "2.5.0",
+    "expo-notifications": "~0.31.5",
+    "expo-router": "5.1.4",
+    "expo-secure-store": "14.2.3",
+    "query-string": "7.1.3",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "react-native": "0.79.5",
+    "react-native-safe-area-context": "5.4.0",
+    "react-native-screens": "~4.11.1",
+    "react-native-url-polyfill": "2.0.0",
+    "react-native-web": "^0.20.0"
+  },
+  "devDependencies": {
+    "@types/react": "19.1.10"
+  }
+}

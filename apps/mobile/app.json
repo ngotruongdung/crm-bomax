@@ -1,0 +1,42 @@
+{
+  "expo": {
+    "name": "OpsDesk",
+    "slug": "opsdesk",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "scheme": "opsdesk",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "OpsDesk dùng thông tin mạng Wi-Fi hiện tại khi bạn chấm công tại văn phòng. Ứng dụng không theo dõi vị trí liên tục."
+      },
+      "entitlements": {
+        "com.apple.developer.networking.wifi-info": true
+      }
+    },
+    "android": {
+      "permissions": [
+        "android.permission.ACCESS_WIFI_STATE",
+        "android.permission.ACCESS_NETWORK_STATE",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.NEARBY_WIFI_DEVICES"
+      ]
+    },
+    "web": {
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-notifications",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "OpsDesk dùng camera trước để chụp selfie xác minh chấm công online. Ảnh chỉ được tải lên vùng lưu trữ riêng tư của hệ thống."
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
